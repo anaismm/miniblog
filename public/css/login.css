@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: var(--FontBody);
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--BackgroundBeige);
+    color: #1F1717;
+
+}
+
+:root {
+    --BackgroundOrange: #F4BF96;
+    --BackgroundBeige: #FCF5ED;
+    --FontBody: 'Poppins', sans-serif;
+    ;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.connexion-text {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.error-message{
+    text-align: center;
+    padding-top: 20px;
+    color: #CE5A67;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(244, 191, 150, 0.62);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(244, 191, 150, 1);
+}
+
+label{
+    font-weight: 600;
+}
+
+input:not(.nom-prenom){
+    width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    border: none;
+    background-color: var(--BackgroundBeige);
+    border-radius: 5px;
+}
+
+.nom-prenom{
+    display: flex;
+    gap:40px;
+}
+
+.nom-prenom input{
+    width: 100%;
+}
+
+.nom{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input[type="submit"]{
+    background-color: #e08d8d;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+
+input[type="submit"]:hover{
+    background-color: #CE5A67;
+    cursor: pointer;
+} 
+
+.no-account{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+}
+
+p .no-account:nth-child(2){
+    padding-top: 0;
+}
+
+.no-account a{
+    text-decoration: none;
+    color: #CE5A67;
+}
+
+.no-account a:hover{
+    text-decoration: underline;
+}
+
+@media(min-width:660px){
+    main {
+        width: 80vw;
+        margin: auto;
+        padding: 40px 0;
+    }
+}
